@@ -1,0 +1,317 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/*
+-------
+SECTIONS
+-------
+*/
+
+.section {
+	width: 100%;
+	padding-top: 35%;
+	padding-bottom: 100px;
+	background-size: contain;
+
+	background-position: top;
+	background-repeat: no-repeat;
+	margin-top: 0px;
+}
+
+.section.seventy {
+    background-color: #651700;
+    background-image: url(../images/70_bg.png);	
+}
+
+.section.eighty {
+    background-color: #232226;
+    background-image: url(../images/80_bg.png);	
+}
+
+.section.ninety {
+    background-color: #18ede7;
+    background-image: url(../images/90_bg.png);	
+}
+
+.swag{
+	background-color: #fd6bde;
+	color: #000;
+	width: 100%;
+
+}
+.slideshow{
+	padding-right: 20%;
+	padding-left: 20%;
+	padding-bottom: 2%;
+	border-radius: 10px;
+}
+
+.landingContainer {
+	width: 100%;
+	background-image: url("../images/spring.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-color: #787878;
+
+}
+.regBtn{
+	font-family: Oswald, sans-serif;
+	background-color: #f05a9e;
+	margin-top: 50%;
+	margin-left: calc(50% - 100px);
+	margin-bottom: 5%;
+	border: none;
+	height: 50px;
+	width: 200px;
+	color: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0px 15px 80px 0px rgba(0,0,0,0.2);
+	transition: 0.3s ease;
+	visibility: hidden;
+}
+.landingContainer a{
+	text-decoration: none;
+	color: white;
+}
+.artist{
+	background-image: url("../images/leslie_web.jpg");
+}
+
+/*
+-------
+NAV
+-------
+*/
+.navigation{
+	position: fixed;
+	padding-top: 350px;
+	width: 5%;
+}
+.nav{
+	border: none;
+	background: transparent;
+	margin-left:15px;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 700;
+	color: white;
+	background: none;
+	padding: 10px;
+	border-radius: 100px;
+}
+.nav::selection .nav:hover{
+	border: thin;
+	border-color: white;
+	color: transparent;
+}
+
+
+/*
+-------
+TYPOGRAPHY
+-------
+*/
+
+h1 {
+	
+}
+
+h2 {
+	font-family: Oswald, sans-serif;
+	margin: 20px;
+	padding: 0px;
+	display: inline;
+
+	font-size: 36px;
+	color: white;
+	letter-spacing: 5px;
+}
+
+h3 {
+	font-family: Oswald, sans-serif;
+	margin: 20px;
+
+	font-size: 24px;
+}
+
+h4 {
+	font-family: Nunito, sans-serifs;
+	margin: 20px;
+	margin-top: -15px;
+
+	font-size: 14px;
+	color: #aaa;
+}
+p{
+	font-family: Oswald, sans-serif;
+
+}
+
+.card p {
+	color: black;
+	font-family: Nunito, sans-serif;
+	margin: 20px;
+	margin-right: 25px;
+	margin-top: -20px;
+	display: inline-block;
+}
+
+
+
+/*
+-------
+CARDS
+-------
+*/
+
+.card {
+	background-color: white;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0px 15px 80px 0px rgba(0,0,0,0.2);
+	transition: 0.3s ease;
+	margin-top: 30px;
+}
+
+
+.card:hover,
+.card:focus{
+	cursor: pointer;
+	box-shadow: 0px 30px 100px 0px rgba(0,0,0,0.3);
+
+	-ms-transform: translate(0px, -8px); /* IE 9 */
+    -webkit-transform: translate(0px, -8px); /* Safari */
+    transform: translate(0px, -8px);
+
+}
+
+.card::after {
+	display: none;
+	position: absolute;
+	height: 50%;
+	color: black;
+	margin: 20px;
+	margin-top: 0px;
+	font-family: Nunito, sans-serif;
+}
+
+.card:hover::after,
+.card:focus::after{
+	display: block;
+}
+
+.desc{
+	display: none;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.card:hover .desc,
+.card:focus .desc{
+	display: block;
+	transition: 0.3s ease;
+}
+
+.card-image {
+	width: 100%;
+	transition: 0.3s ease;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	padding-top: 75%;
+}
+
+.card:hover .card-image,
+.card:focus .card-image{
+	padding-top: 0%;
+}
+
+.card:hover .card-image img,
+.card:focus .card-image img{
+	display: none;
+	transition: 0.3s ease;
+}
+
+.seventy .card-image {
+	background-color: #e3b604;
+}
+
+.eighty .card-image {
+	background-color: #18ede7;
+}
+
+.ninety .card-image {
+	background-color: #ff66df;
+}
+
+.mySlides {
+	display:none;
+	border-radius: 10px;
+}
+
+
+/*
+-------
+RESPONSIVE
+-------
+*/
+
+@media only screen and (min-width: 1024px) {
+	.reg{
+		visibility: hidden;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	.navigation {
+		position: fixed;
+		width: 100%;
+		background: white;
+		box-shadow: 0px 15px 80px 0px rgba(0,0,0,0.2);
+		padding-top: 0px;
+	}
+	.nav{
+		color: black;
+	}
+
+	.navigation .reg{
+		visibility: visible;
+	}
+
+	.regBtn{
+		visibility: hidden;
+	}
+
+	.landingContainer{
+		background-size: cover;
+		height: -webkit-fill-available;
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	.navigation {
+		position: fixed;
+		width: 100%;
+		background: white;
+		box-shadow: 0px 15px 80px 0px rgba(0,0,0,0.2);
+		padding-top: 0px;
+	}
+	.nav{
+		color: black;
+		margin-left: 0px;
+		font-size: 15px;
+	}
+
+}
+
+@media only screen and (max-width: 650px) {
+    
+}
+
+

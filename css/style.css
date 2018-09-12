@@ -1,0 +1,454 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
+
+.navbar-default .navbar-nav>li>a {
+    background-color: transparent;
+    border-color: transparent;
+    color: #EEBE51;
+    border-width: 2px;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-default:hover,
+.navbar-default .navbar-nav>li>a:hover {
+    border-color: #EEBE51;
+    color: #EEBE51;
+    background-color: transparent;
+}
+
+a:active, a:focus, a:hover {
+    outline: none;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #666;
+}
+
+
+/* IcoMoon Webfont Stuff */
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot');
+    src:url('../fonts/icomoon.eot') format('embedded-opentype'),
+        url('../fonts/icomoon.woff') format('woff'),
+        url('../fonts/icomoon.ttf') format('truetype'),
+        url('../fonts/icomoon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-location:before {
+    content: "\e603";
+}
+.icon-clock:before {
+    content: "\e604";
+}
+.icon-menu:before {
+    content: "\e609";
+}
+.icon-calendar:before {
+    content: "\e605";
+}
+.icon-arrow-up:before {
+    content: "\e606";
+}
+.icon-arrow-right:before {
+    content: "\e607";
+}
+.icon-arrow-left:before {
+    content: "\e608";
+}
+.icon-facebook:before {
+    content: "\e600";
+}
+.icon-instagram:before {
+    content: "\e601";
+}
+.icon-twitter:before {
+    content: "\e602";
+}
+
+.big {
+    font-size: 25pt;
+}
+
+.success {
+    color: #7dab61;
+}
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.row {
+  margin-left:0px;
+  margin-right:0px;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+  background-color: #f5f5f5;
+  margin-top:0px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+#myCarousel  .item {
+  height: 600px;
+  background-color:#bbb;
+}
+#myCarousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 600px;
+}
+
+
+#wrap > .container {
+  padding: 60px 15px 0;
+}
+.container .credit {
+  margin: 20px 0;
+}
+
+#footer {
+  background-color:#414141;
+}
+
+#footer a {
+  color:#efefef;
+}
+
+header {
+  background: #333;
+  color:#555;
+}
+
+header .dropdown-menu {
+  top:74px;
+  background: #ffcc33;
+  border-width:0;
+}
+
+h1 {
+  font-size:50px;
+}
+
+.logo {
+  font-size:40px;
+  position:absolute;
+  z-index:1200;
+  color:#333;
+  top:70px;
+  text-align:center;
+  width:100%;
+}
+
+#nav {
+  width: 100%;
+  position:static;
+  top:-32px;
+}
+
+#nav.affix {
+   position: fixed;
+   top: 0;
+   z-index:10;
+   -webkit-transition: all .6s ease-in-out;
+}
+
+#footer > .container {
+  
+}
+
+@media (min-width: 767px) {
+  .navbar-nav.nav-justified > li{
+      float:none;
+  }
+}
+  
+.navbar-nav {
+  margin: 1px 1px; 
+}  
+  
+/* customize nav style */
+.navbar-custom {
+    background-color: #2e2e2e;
+	font-weight:700;
+    text-transform:uppercase;
+    border-width:0;
+}
+.navbar-custom  .navbar-nav>li>a {
+	color: #ddd;
+}
+.navbar-custom  .dropdown-menu li>a:hover {
+	color: #eee;
+}
+.navbar-custom  .navbar-nav li>a:hover, .navbar-nav li .open, .navbar-custom .navbar-nav .active a  {
+	background-color: #000;
+}
+.navbar-custom .navbar-nav>.dropdown>a .caret {
+	border-top-color: #999;
+	border-bottom-color: #999;
+}
+
+.navbar-collapse.in { /*3.0.2 bug workaround*/
+    overflow-y: visible;
+}
+
+.navbar-toggle {
+	outline:0;
+}
+
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+#myCarousel  .item {
+  height: 600px;
+  background-color:#bbb;
+}
+#myCarousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 600px;
+}
+
+
+#wrap > .container {
+  padding: 60px 15px 0;
+}
+.container .credit {
+  margin: 0px 0;
+}
+
+#footer {
+  background-color:#414141;
+}
+
+#footer a {
+  color:#efefef;
+}
+
+header {
+  background: #333;
+  color:#555;
+}
+
+header .dropdown-menu {
+  top:74px;
+  background: #ffcc33;
+  border-width:0;
+}
+
+h1 {
+  font-size:50px;
+}
+
+.logo {
+  font-size:40px;
+  position:absolute;
+  z-index:1200;
+  color:#333;
+  top:70px;
+  text-align:center;
+  width:100%;
+}
+
+#nav {
+  width: 100%;
+  position:static;
+  top:-32px;
+}
+
+#nav.affix {
+   position: fixed;
+   top: 0;
+   z-index:10;
+   -webkit-transition: all .6s ease-in-out;
+}
+
+#footer > .container {
+  
+}
+
+.landingContainer {
+    width: 100%;
+    height: 600px;
+    background-image: url("../images/spring2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+}
+
+@media (min-width: 767px) {
+  .navbar-nav.nav-justified > li{
+      float:none;
+  }
+}
+  
+.navbar-nav {
+  margin: 0px 0px; 
+}  
+  
+
+
+.divider {
+    margin-left:0px;
+  margin-right:0px;
+}
+
+.panel {
+	border-width:0;
+}
+
+@media (max-width: 768px) {
+	header {
+	
+	}
+}
+
+#map-canvas {
+  	width: 100%; 
+  	height: 300px;
+	margin: 0;
+	padding: 15px;
+}
+
+.scroll-top {
+   position:fixed;
+   bottom:0;
+   right:6%;
+   z-index:100;
+   background: #f2f3f2;
+   font-size:24px;
+   border-top-left-radius:3px;
+   border-top-right-radius:3px;
+}
+.scroll-top a:link,.scroll-top a:visited {
+  color:#521c36;
+} 
+ 
+
+section {
+    display:block;
+    color: #ffffff;
+    height: auto;
+    min-height: 100% !important;
+}
+            
+.bg-thursday {
+	background: url('../images/thursday.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+    background-position: 50% 50%;
+    background-color: #651701;
+}
+            
+.bg-friday {
+	background: url('../images/friday.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+    background-position: 50% 50%;
+    background-color: #65fffc;
+}
+            
+.bg-saturday {
+	background: url('../images/saturday.jpg') ;
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+    background-position: 50% 50%;
+    background-color: #232227;
+}
+            
+.bg-sunday {
+
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+    background-position: 50% 50%;
+    background-color: white;
+}
+
+.panel .img-responsive {
+	min-height:270px;
+    max-height:270px;
+}
+
+.tooltip_templates{
+  display: none;
+}

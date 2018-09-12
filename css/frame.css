@@ -1,0 +1,76 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/*
+This is a 6-column grid system 
+*/
+
+.grid {
+	max-width: 1060px;
+	margin: auto;
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 25px;
+	padding-right: 25px;
+	flex-wrap: wrap;
+}
+
+.column {
+	margin-left: 25px;
+	margin-right: 25px
+}
+
+.cols-1 {
+	width: calc(16.6% - 50px);
+}
+
+.cols-2 {
+	width: calc(33.3% - 50px);
+}
+
+.cols-3 {
+	width: calc(50% - 50px);
+}
+
+.cols-4 {
+	width: calc(66.6% - 50px);
+}
+
+.cols-5 {
+	width: calc(82.6% - 50px);
+}
+
+.cols-6 {
+	width: 100%;
+}
+
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .cols-1 {
+		width: calc(33.3% - 50px);
+	}
+    .cols-2 {
+    	width: calc(50% - 50px);
+    }
+    .cols-3, .cols-4, .cols-5 {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+    .cols-1, .cols-2, .cols-3, .cols-4, .cols-5 {
+		width: 100%;
+	}
+}
